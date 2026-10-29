@@ -1,0 +1,15 @@
+{
+  "name": "openclaw-dashboard",
+  "version": "1.0.0",
+  "description": "Live system + active-model dashboard that OpenClaw can edit (add/remove widgets) via REST or by editing a JSON file.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18.15"
+  },
+  "license": "MIT"
+}

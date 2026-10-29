@@ -1,0 +1,15 @@
+{
+  "title": "OpenClaw Dashboard",
+  "refreshMs": 2000,
+  "widgets": [
+    { "id": "model", "type": "model", "title": "Active Model", "size": "lg" },
+    { "id": "alerts", "type": "alerts", "title": "Important", "size": "md", "options": { "limit": 8 } },
+    { "id": "cpu", "type": "cpu", "title": "CPU", "size": "sm" },
+    { "id": "memory", "type": "memory", "title": "Memory", "size": "sm" },
+    { "id": "disk", "type": "disk", "title": "Disk", "size": "sm" },
+    { "id": "gpu", "type": "gpu", "title": "GPU", "size": "sm" },
+    { "id": "local-models", "type": "local-models", "title": "Loaded Local Models", "size": "md" },
+    { "id": "system", "type": "system", "title": "Host", "size": "md" },
+    { "id": "network", "type": "network", "title": "Network", "size": "sm" }
+  ]
+}

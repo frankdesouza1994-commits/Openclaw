@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenClaw Dashboard</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23e5484d'/></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="dot" id="conn-dot" title="Disconnected"></span>
+      <h1 id="title">OpenClaw Dashboard</h1>
+    </div>
+    <div class="actions">
+      <span class="muted small" id="updated"></span>
+      <button id="edit-toggle" class="btn" aria-pressed="false">Edit</button>
+    </div>
+  </header>
+
+  <section id="editor" class="editor" hidden>
+    <form id="add-form">
+      <label>Type <select name="type" id="add-type"></select></label>
+      <label>Title <input name="title" placeholder="optional"></label>
+      <label>Size
+        <select name="size">
+          <option value="sm">Small</option>
+          <option value="md">Medium</option>
+          <option value="lg">Large</option>
+          <option value="full">Full width</option>
+        </select>
+      </label>
+      <label class="grow">Options (JSON) <input name="options" id="add-options" placeholder="{}"></label>
+      <button class="btn primary" type="submit">Add widget</button>
+    </form>
+    <p class="muted small" id="add-help"></p>
+    <p class="error small" id="add-error" role="alert"></p>
+  </section>
+
+  <main id="grid" class="grid" aria-live="polite"></main>
+
+  <script src="app.js"></script>
+</body>
+</html>
